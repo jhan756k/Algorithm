@@ -1,3 +1,5 @@
+import sys
+input = sys.stdin.readline
 n = int(input())
 m = int(input())
 dis=[[100001]*(n+1) for _ in range(n+1)]
@@ -18,7 +20,7 @@ for k in range(1, n+1):
 
 for i in range(1, n+1):
     for j in range(1, n+1):
-        if dis[i][j]==5000:
+        if dis[i][j]==100001:
             print(0, end=' ')
         else:
             print(dis[i][j], end=' ')
