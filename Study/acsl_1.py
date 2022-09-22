@@ -1,11 +1,7 @@
-def transform():
+for x in range(5):
     n, p = map(int, input().split())
-
-    nlist = []
-
-    for x in str(n):
-        nlist.append(int(x))
-
+    nlist = [int(x) for x in str(n)]
+    
     p_index = len(nlist) - p
 
     for x in range(len(nlist)):
@@ -17,13 +13,4 @@ def transform():
             add_num = abs(nlist[x] - nlist[p_index])
             nlist[x] = add_num
 
-    ans = ""
-
-    for x in nlist:
-        ans += str(x)
-
-    print(int(ans))
-
-for x in range(5):
-    transform()
-
+    print(int("".join(list(map(str, nlist)))))

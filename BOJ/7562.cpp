@@ -10,7 +10,7 @@ int dx[8] = {1,2,2,1,-1,-2,-2,-1};
 int dy[8] = {2,1,-1,-2,-2,-1,1,2};
  
 int I;
-queue<pair<int, int>> dQ;
+queue<pair<int, int> > dQ;
 int sx, sy, ex, ey;
  
 void BFS(int a, int b){
