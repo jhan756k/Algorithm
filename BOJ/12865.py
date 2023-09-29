@@ -8,5 +8,6 @@ for i in range(n):
         tmp = dp[x-w] + v
         if tmp > dp[x]:
             dp[x] = tmp
+        print(dp)
             
 print(dp[k])
