@@ -1,7 +1,6 @@
-import sys
-n, k = map(int, sys.stdin.readline().split())
-board = [list(map(int, sys.stdin.readline().split())) for _ in range(n)]
-s, x, y = map(int, sys.stdin.readline().split())
+n, k = map(int, input().split())
+board = [list(map(int, input().split())) for _ in range(n)]
+s, x, y = map(int, input().split())
 alist = []
 
 for i in range(n):
